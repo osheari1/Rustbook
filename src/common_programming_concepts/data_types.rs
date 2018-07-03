@@ -16,6 +16,8 @@
 /// Rust is statically typed - Must know all types at compile time.
 ///
 pub fn run() {
+    println!("");
+
     let tup: (i64, f64, u8) = (20, 30.4, 2);
 
     // Destructoring
@@ -36,4 +38,3 @@ pub fn run() {
 
     // Need to be careful of index out of bounds errors.
 }
-

@@ -24,8 +24,4 @@
 
 //     println!("The value of number is: {}", number);
 // }
-pub fn run() {
-    println!("Empty function.");
-}
-
-
+pub fn run() {}

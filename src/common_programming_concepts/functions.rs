@@ -19,6 +19,7 @@
 ///
 ///
 pub fn run() {
+    println!("");
 
     // Statement
     let x: i32 = 6;
@@ -40,4 +41,3 @@ fn some_function(x: i32) -> i32 {
     println!("Some function {}", x);
     x // No semicolon
 }
-

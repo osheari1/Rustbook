@@ -47,8 +47,9 @@ pub fn run() {
         let mut guess = String::new();
 
         // Should be doing error handling here
-        io::stdin().read_line(&mut guess)
-            .expect("Failed to read line");
+        io::stdin().read_line(&mut guess).expect(
+            "Failed to read line",
+        );
 
         // Use pattern matching to properly handle non numerical input
         let guess: u32 = match guess.trim().parse() {
