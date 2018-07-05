@@ -22,6 +22,7 @@ fn main() {
     println!("===== Ownership =====");
     ownership::what_is_ownership::run();
     ownership::references_borrowing::run();
+    ownership::slices::run();
 
 
 }
