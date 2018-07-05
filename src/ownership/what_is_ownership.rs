@@ -14,7 +14,8 @@
 ///
 /// * When variables on the heap go out of scop, _drop()_ is called to free memory.
 ///
-/// * When pointers are copied from one variable to another, the first variable is _invalidated_. This is considered a _move_.
+/// * When pointers are copied from one variable to another, the first variable is _invalidated_.
+/// This is considered a _move_.
 /// This only applies to variables on the stack.
 ///
 /// * Rust has a Copy trait that can by placed on anything stored on the stack. Anything
@@ -74,7 +75,8 @@ pub fn run() {
     println!("Return values and scope.");
     let _s1 = give_ownership(); // Ownership transfered to s1
     let s2 = String::from("Hello"); // s2 in scope
-    let _s3 = take_and_give_back(s2); // s2 is moved into take_and_give_back, then returned by function.
+    let _s3 = take_and_give_back(s2); // s2 is moved into take_and_give_back, then
+                                      // returned by function.
     // s1 is dropped, s2 was moved so already dead, s3 is dropped after block end
 }
 

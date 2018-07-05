@@ -24,6 +24,4 @@
 /// let mut spaces = "   ";
 /// let spaces = spaces.len();
 /// ```
-pub fn run() {
-    println!("Empty function.");
-}
+pub fn run() {}
