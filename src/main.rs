@@ -1,6 +1,7 @@
 pub mod common_programming_concepts;
 pub mod guessing_game;
 pub mod ownership;
+pub mod structs;
 
 extern crate rand;
 
@@ -24,5 +25,7 @@ fn main() {
     ownership::references_borrowing::run();
     ownership::slices::run();
 
+    println!("===== Structs =====");
+    structs::defining_instantiating::run();
 
 }
