@@ -11,7 +11,7 @@ fn main() {
     println!("Hello, world!");
 
     println!("===== Guesing Game =====");
-    guessing_game::run();
+    // guessing_game::run();
 
     println!("===== Common Programming Concepts =====");
     common_programming_concepts::control_flow::run();
@@ -27,5 +27,6 @@ fn main() {
 
     println!("===== Structs =====");
     structs::defining_instantiating::run();
+    structs::example_prog::run();
 
 }

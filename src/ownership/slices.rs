@@ -36,7 +36,7 @@ pub fn run() {
 
     // First word with slices
     let s = String::from("hello world");
-    let _fw = first_word_pass_String(&s);
+    let _fw = first_word_pass_string(&s);
     let _fw = first_word_pass_str(&s[..]);
     // The compiler will throw an error if you empty the string
     // s.clear();
@@ -61,7 +61,7 @@ fn first_word_returning_index(s: &String) -> usize {
     s.len() // If is one word returns last index
 }
 
-fn first_word_pass_String(s: &String) -> &str {
+fn first_word_pass_string(s: &String) -> &str {
     let bytes = s.as_bytes();
     for (i, &item) in bytes.iter().enumerate() {
         if item == b' ' {

@@ -4,10 +4,10 @@
 ///
 /// ```rust
 /// struct User {
-/// username: String,
+/// _username: String,
 /// email: String,
-/// sign_in_count: u64,
-/// active: bool}
+/// _sign_in_count: u64,
+/// _active: bool}
 /// ```
 ///
 /// Can change fields by calling instance.field = ...., if the entire
@@ -18,8 +18,8 @@
 ///
 /// #### Example
 /// ```rust
-/// fn build_user(email: String, username: String) -> User {
-///     User { email, username, active: true, sign_in_count: 1}
+/// fn build_user(email: String, _username: String) -> User {
+///     User { email, _username, _active: true, _sign_in_count: 1}
 /// }
 /// ```
 /// _.._ : Struct update syntax
@@ -35,10 +35,10 @@
 ///
 ///
 struct User {
-    username: String,
+    _username: String,
     email: String,
-    sign_in_count: u64,
-    active: bool,
+    _sign_in_count: u64,
+    _active: bool,
 }
 struct Color(i32, i32, i32);
 
@@ -46,16 +46,16 @@ pub fn run() {
 
     let _user1 = User {
         email: String::from("derp@gmail.com"),
-        username: String::from("somename1"),
-        active: true,
-        sign_in_count: 1
+        _username: String::from("somename1"),
+        _active: true,
+        _sign_in_count: 1
     };
 
     let mut _user2 = User {
         email: String::from("derp@gmail.com"),
-        username: String::from("somename1"),
-        active: true,
-        sign_in_count: 1
+        _username: String::from("somename1"),
+        _active: true,
+        _sign_in_count: 1
     };
 
     // wont compile
@@ -70,7 +70,7 @@ pub fn run() {
     // Update syntax
     let _user4 = User {
         email: String::from("example@gmail.com"),
-        username: String::from("example2"),
+        _username: String::from("example2"),
         .._user3
     };
 
@@ -79,6 +79,6 @@ pub fn run() {
 }
 
 
-fn build_user(email: String, username: String) -> User {
-    User { email, username, active: true, sign_in_count: 1}
+fn build_user(email: String, _username: String) -> User {
+    User { email, _username, _active: true, _sign_in_count: 1}
 }
