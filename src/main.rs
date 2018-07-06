@@ -1,7 +1,11 @@
+#![allow(dead_code)]
+#![allow(unused_variables)]
+
 pub mod common_programming_concepts;
 pub mod guessing_game;
 pub mod ownership;
 pub mod structs;
+pub mod enums_patternmatching;
 
 extern crate rand;
 
@@ -29,5 +33,13 @@ fn main() {
     structs::defining_instantiating::run();
     structs::example_prog::run();
     structs::method_syntax::run();
+
+    println!("===== Enums and Pattern matching =====");
+    enums_patternmatching::define_enum::run();
+    enums_patternmatching::pattern_match::run();
+
+
+
+
 
 }
