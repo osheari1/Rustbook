@@ -28,5 +28,6 @@ fn main() {
     println!("===== Structs =====");
     structs::defining_instantiating::run();
     structs::example_prog::run();
+    structs::method_syntax::run();
 
 }

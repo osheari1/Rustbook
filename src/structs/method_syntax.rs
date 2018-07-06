@@ -37,7 +37,7 @@ impl Rectangle {
 }
 
 pub fn run() {
-    let rect1 = Rectangle { width: 30, height 50};
+    let rect1 = Rectangle { width: 30, height: 50};
     println!(
         "The area of the rectangle is {} pixels.",
         rect1.area()
