@@ -6,7 +6,6 @@
 ///
 ///
 ///
-
 enum Coin {
     Penny,
     Nickel,

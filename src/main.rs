@@ -37,6 +37,7 @@ fn main() {
     println!("===== Enums and Pattern matching =====");
     enums_patternmatching::define_enum::run();
     enums_patternmatching::pattern_match::run();
+    enums_patternmatching::if_let::run();
 
 
 
