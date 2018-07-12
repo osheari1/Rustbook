@@ -1,10 +1,10 @@
 #![allow(unused_variables)]
 #![allow(dead_code)]
 pub mod common_programming_concepts;
+pub mod enums_patternmatching;
 pub mod guessing_game;
 pub mod ownership;
 pub mod structs;
-pub mod enums_patternmatching;
 
 extern crate rand;
 
@@ -16,4 +16,3 @@ mod tests {
         defining_instantiating::run();
     }
 }
-

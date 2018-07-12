@@ -12,14 +12,13 @@
 /// take self as a parameter. These are often used as constructors that return
 /// a new instance of the struct.
 ///
-/// 
 ///
-
+///
 
 #[derive(Debug)]
 struct Rectangle {
     width: u32,
-    height: u32
+    height: u32,
 }
 
 impl Rectangle {
@@ -28,24 +27,22 @@ impl Rectangle {
     }
 }
 
-
 impl Rectangle {
     fn square(len: u32) -> Rectangle {
         // Can also use Rectangle(len, len)
-        Rectangle{ width: len, height: len }
+        Rectangle {
+            width: len,
+            height: len,
+        }
     }
 }
 
 pub fn run() {
-    let rect1 = Rectangle { width: 30, height: 50};
-    println!(
-        "The area of the rectangle is {} pixels.",
-        rect1.area()
-    );
+    let rect1 = Rectangle {
+        width: 30,
+        height: 50,
+    };
+    println!("The area of the rectangle is {} pixels.", rect1.area());
 
     let _rect2 = Rectangle::square(3);
-
-
-
 }
-

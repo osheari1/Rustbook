@@ -48,8 +48,6 @@ pub fn run() {
     let x = 5;
     let _y = x; // x is copied to create y
 
-
-
     // s1 copies to the reference to s2
     // Printing s1 will fail as it has been invalidated.
     let s1 = String::from("hello");
@@ -64,22 +62,19 @@ pub fn run() {
     println!("Ownership and functions");
     let s = String::from("hello"); // s is in scope
     take_ownership(s); // s's value moves into the function and is no longer valid here
-    // println!(s); Throws compile error
-
+                       // println!(s); Throws compile error
 
     let x = 5; // x is in scope
     makes_copy(x); // x moves into function, but i32 is Copy, so x can still be used.
     println!("x can still be used {}", x);
-
 
     println!("Return values and scope.");
     let _s1 = give_ownership(); // Ownership transfered to s1
     let s2 = String::from("Hello"); // s2 in scope
     let _s3 = take_and_give_back(s2); // s2 is moved into take_and_give_back, then
                                       // returned by function.
-    // s1 is dropped, s2 was moved so already dead, s3 is dropped after block end
+                                      // s1 is dropped, s2 was moved so already dead, s3 is dropped after block end
 }
-
 
 fn take_and_give_back(string: String) -> String {
     string // string is returned
@@ -88,7 +83,6 @@ fn take_and_give_back(string: String) -> String {
 fn give_ownership() -> String {
     String::from("Hello")
 }
-
 
 fn take_ownership(string: String) {
     // s comes into scope

@@ -37,7 +37,6 @@ pub fn run() {
 
 // Return values are specified with ->
 fn some_function(x: i32) -> i32 {
-
     println!("Some function {}", x);
     x // No semicolon
 }

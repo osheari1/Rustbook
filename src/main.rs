@@ -1,10 +1,6 @@
 extern crate rustbook;
 
-use rustbook::{
-    common_programming_concepts,
-    ownership,
-    structs,
-    enums_patternmatching};
+use rustbook::{common_programming_concepts, enums_patternmatching, ownership, structs};
 
 fn main() {
     println!("===== Getting Started =====");
@@ -18,7 +14,6 @@ fn main() {
     common_programming_concepts::data_types::run();
     common_programming_concepts::variables_mutability::run();
     common_programming_concepts::functions::run();
-
 
     println!("===== Ownership =====");
     ownership::what_is_ownership::run();
@@ -34,9 +29,4 @@ fn main() {
     enums_patternmatching::define_enum::run();
     enums_patternmatching::pattern_match::run();
     enums_patternmatching::if_let::run();
-
-
-
-
-
 }
