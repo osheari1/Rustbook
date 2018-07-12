@@ -18,6 +18,13 @@
 ///
 /// #### Example
 /// ```rust
+///
+/// struct User {
+///     _username: String,
+///     email: String,
+///     _sign_in_count: u64,
+///     _active: bool,
+/// }
 /// fn build_user(email: String, _username: String) -> User {
 ///     User { email, _username, _active: true, _sign_in_count: 1}
 /// }

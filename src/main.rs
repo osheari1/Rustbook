@@ -1,14 +1,10 @@
-#![allow(dead_code)]
-#![allow(unused_variables)]
+extern crate rustbook;
 
-pub mod common_programming_concepts;
-pub mod guessing_game;
-pub mod ownership;
-pub mod structs;
-pub mod enums_patternmatching;
-
-extern crate rand;
-
+use rustbook::{
+    common_programming_concepts,
+    ownership,
+    structs,
+    enums_patternmatching};
 
 fn main() {
     println!("===== Getting Started =====");
