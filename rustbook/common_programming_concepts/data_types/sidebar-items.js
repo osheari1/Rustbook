@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["run","Scalar Types - integers, floating point, boolean, and characters."]]});

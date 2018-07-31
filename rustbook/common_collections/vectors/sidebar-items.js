@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["run","General * vec macro infers type: vec![1, 2, 3];"]]});

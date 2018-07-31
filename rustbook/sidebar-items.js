@@ -1,0 +1,1 @@
+initSidebarItems({"mod":[["common_collections",""],["common_programming_concepts",""],["enums_patternmatching",""],["guessing_game",""],["ownership",""],["structs",""]]});

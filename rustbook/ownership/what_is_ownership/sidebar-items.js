@@ -1,0 +1,1 @@
+initSidebarItems({"fn":[["run","Ownership Rules * Each value in Rust has a variable that's called owner. * There can only be one owner at a time. * When the owner groes out of scope, the value will be dropped."]]});
