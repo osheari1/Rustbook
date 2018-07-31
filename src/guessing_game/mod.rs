@@ -1,11 +1,10 @@
 extern crate rand;
 
 // Bring types into scope
-use std::io;
-use std::cmp::Ordering;
 use rand::Rng;
+use std::cmp::Ordering;
+use std::io;
 // use guessing_game::rand::Rng; // Could also use self::rand::Rng;
-
 
 /// **let** -  statements are used to create variables
 ///
@@ -36,7 +35,6 @@ use rand::Rng;
 /// guess.cmp(&secret_number) cannot infer that guess should be converted to a
 /// numberical type for comparison.
 pub fn run() {
-
     println!("Guess the number");
 
     let secret_number = rand::thread_rng().gen_range(1, 101);
@@ -47,9 +45,9 @@ pub fn run() {
         let mut guess = String::new();
 
         // Should be doing error handling here
-        io::stdin().read_line(&mut guess).expect(
-            "Failed to read line",
-        );
+        io::stdin()
+            .read_line(&mut guess)
+            .expect("Failed to read line");
 
         // Use pattern matching to properly handle non numerical input
         let guess: u32 = match guess.trim().parse() {
@@ -68,12 +66,4 @@ pub fn run() {
             }
         }
     }
-
-
-
-
-
-
-
-
 }

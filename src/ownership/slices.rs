@@ -41,13 +41,9 @@ pub fn run() {
     // The compiler will throw an error if you empty the string
     // s.clear();
 
-
     // General slice type
     let a = [1, 2, 3, 4, 5];
     let _slice = &a[1..3];
-
-
-
 }
 
 fn first_word_returning_index(s: &String) -> usize {
@@ -80,5 +76,3 @@ fn first_word_pass_str(s: &str) -> &str {
     }
     &s[..] // If is one word returns last index
 }
-
-

@@ -9,31 +9,29 @@
 
 enum IpAddrKind {
     V4,
-    V6
+    V6,
 }
 
 enum IpAddr {
     V4(String),
-    V6(String)
+    V6(String),
 }
 
 enum IpAddr2 {
     V4(u8, u8, u8, u8),
-    V6(String)
+    V6(String),
 }
 
 enum Message {
     Quit,
-    Move { x: i32, y: i32}, // Anonymous struct
+    Move { x: i32, y: i32 }, // Anonymous struct
     Write(String),
-    ChangeColor(i32, i32, i32)
+    ChangeColor(i32, i32, i32),
 }
 
 impl Message {
     fn call(&self) {}
 }
-
-
 
 pub fn run() {
     let _four = IpAddr::V4;
@@ -46,14 +44,9 @@ pub fn run() {
     m.call();
 }
 
-
 fn options() {
     let some_number = Some(5);
     let soem_string = Some("a string");
 
     let absent_number: Option<i32> = None;
 }
-
-
-
-

@@ -45,7 +45,7 @@ pub fn run() {
     {
         let mut s = String::from("mutable hello");
         let _r1 = &mut s; // first mutable borrow
-        // let _r2 = &mut s; // cannot borrow here as s has already been borrowed
+                          // let _r2 = &mut s; // cannot borrow here as s has already been borrowed
     }
 
     // But will work if in different scopes
@@ -61,19 +61,14 @@ pub fn run() {
     {
         let _r1 = &s3; // first immutable borrow
         let _r2 = &s3; // second immutable borrow
-        // let _r3 = &mut s3; // Wont compile
+                       // let _r3 = &mut s3; // Wont compile
     }
-
 
     //
     // Dangling references
     //
     // dangle();
     no_dangle();
-
-
-
-
 }
 
 fn calculate_length(s: &String) -> usize {
@@ -89,7 +84,6 @@ fn change_mut(s: &mut String) {
     // this works
     s.push_str(" world");
 }
-
 
 // wont compile
 // fn dangle() -> &String {

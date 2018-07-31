@@ -15,17 +15,20 @@
 #[derive(Debug)]
 struct Rectangle {
     width: u32,
-    height: u32
+    height: u32,
 }
 
 pub fn run() {
-    let rect1 = Rectangle { width: 30, height: 50};
-    println!("The area of hte rectangle is {} square pixels",
-             area(&rect1)
+    let rect1 = Rectangle {
+        width: 30,
+        height: 50,
+    };
+    println!(
+        "The area of hte rectangle is {} square pixels",
+        area(&rect1)
     );
 
     println!("rect1 fields {:?}", rect1);
-
 }
 
 // Want to borrow the rectangle instead of taking ownership.
@@ -33,6 +36,3 @@ pub fn run() {
 fn area(rectangle: &Rectangle) -> u32 {
     rectangle.width * rectangle.height
 }
-
-
-

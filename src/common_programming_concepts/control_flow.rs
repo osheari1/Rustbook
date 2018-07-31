@@ -13,7 +13,6 @@
 //         println!("number is not divisible by 4, 3, or 2");
 //     }
 
-
 //     // Inline if expressions
 //     let condition = true;
 //     let number = if condition {
