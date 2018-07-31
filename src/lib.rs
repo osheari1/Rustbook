@@ -5,6 +5,7 @@ pub mod enums_patternmatching;
 pub mod guessing_game;
 pub mod ownership;
 pub mod structs;
+pub mod common_collections;
 
 extern crate rand;
 
