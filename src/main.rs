@@ -1,11 +1,11 @@
 extern crate rustbook;
 
 use rustbook::{
+    common_collections,
     common_programming_concepts,
     enums_patternmatching,
     ownership,
-    structs,
-    common_collections};
+    structs};
 
 fn main() {
     println!("===== Getting Started =====");
@@ -38,6 +38,7 @@ fn main() {
     println!("===== Collections =====" );
     common_collections::vectors::run();
     common_collections::strings::run();
+    common_collections::hash_maps::run();
 
 
 
